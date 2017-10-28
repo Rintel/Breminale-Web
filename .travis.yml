@@ -1,22 +1,38 @@
 language: node_js
+sudo: required
 node_js:
-  - "8"
+- '8'
 cache:
   yarn: true
   directories:
   - node_modules
-
 before_install:
-  - npm i -g npm
-  - npm install
-  
-install: true
-
+- npm i -g npm
+- npm install
+install:
+  # Install any dependencies required for building your site here.
+  # `awscli` is required for invalidation of CloudFront distributions.
+  - sudo pip install awscli
 script:
-  - npm run lint
-
+- npm run lint
+- npm run test
+- npm run build
 notifications:
   email:
     on_failure: change
-
-after_success: 'npm run coveralls'
+after_success: npm run coveralls
+deploy:
+  provider: s3
+  access_key_id: AKIAJROI3YSJQOVVGPQA
+  secret_access_key:
+    secure: FZwuUzHgpGpal8zk2Uf8WdsEBmz19rlmB14eR3ZF7vGNYih0KSNXntpvAZOWfGOTKA4rArYbY9TlOAMd2jucXgx1Dv6B/pVyJwgVdVy5PI+QDb4fur2k8T6EY02KHiTSgZO4LpFTgLFaHYptClukQk7gO7XCsS/mBFSd9Y/xHDYd4DIRdcriBK4h4a0/9NGQaBNP7syNCAtAuLydXRCUBGHLaEnDQgU9uqviu/BbTGh/3u/6QMwSu8VyQMqUk+f5eJkUGaK0ffu9gaGMI2bIZFS2R8vBPHfrES+kAk/hcg6/bAoGg8XJP743SMz5BSUSaZbA7ZDIZrOqsjLniB79jEbcpO+u4z/21guW8z8BhtphyeIuaS9KDk5hH9aSEeUjsY/Qto4VcIuZXk6W6HO+3VCnWARPCeDoYgKS1OxWV7zDbirfjzRYf9BIShY4JLnrk7k9MBl3p+iQsCa1WAfOsAFxZIpFYUxlZHsE8P7zH7pOr5lPJMpWbNWIut+AGZ4Fz4lFA+q6rytWCkZmCaMgsu53vyse4cCOOlARaxYZ0V0yc50oVYFfZ+fvHWUXlOBaAtZi43lYTS5s6PueCgK//jS8z/L7cuirzI+zW/UU+LnCiuSuKGttvgtABfYJ2QgZJoWwK2Ts44Znn8fWp/BoohyP2h/HpkZt43fQEEk1QWo=
+  bucket: breminale-frontend
+  acl: public_read
+  on:
+    branch: master
+    repo: Rintel/Breminale-Web
+after_deploy:
+  # Allow `awscli` to make requests to CloudFront.
+  - aws configure set preview.cloudfront true
+  # Invalidate every object in the targeted distribution.
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
