@@ -1,5 +1,7 @@
 # Breminale-Web
 
+![alt text](https://travis-ci.org/Rintel/Breminale-Web.svg?branch=master "Build Status")
+
 
 ### Setup
 
