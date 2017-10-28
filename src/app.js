@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Welcome from './pages/Welcome/Welcome';
+import EventDetails from './pages/EventDetails/EventDetails';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -19,6 +20,7 @@ const routes = (
     <MuiThemeProvider>
       <Switch>
         <Route path='/' component={Welcome} exact={true} />
+        <Route path='/events/:id' component={EventDetails} />
         <Route component={NotFound} />
       </Switch>
     </MuiThemeProvider>
