@@ -17,6 +17,7 @@ script:
 - npm run lint
 - npm run test
 - npm run build
+
 notifications:
   email:
     on_failure: change
@@ -30,7 +31,8 @@ deploy:
   acl: public_read
   on:
     branch: master
-    repo: Rintel/Breminale-Web
+  local_dir: build
+  skip_cleanup: true
 after_deploy:
   # Allow `awscli` to make requests to CloudFront.
   - aws configure set preview.cloudfront true
