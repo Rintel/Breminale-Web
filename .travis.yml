@@ -31,7 +31,8 @@ deploy:
   acl: public_read
   on:
     branch: master
-  local_dir: build
+    repo: Rintel/Breminale-Web
+  local_dir: public
   skip_cleanup: true
 after_deploy:
   # Allow `awscli` to make requests to CloudFront.
