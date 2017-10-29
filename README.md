@@ -1,6 +1,6 @@
 # Breminale-Web
 
-![alt text](https://travis-ci.org/Rintel/Breminale-Web.svg?branch=master "Build Status")
+![alt text](https://travis-ci.org/Rintel/Breminale-Web.svg?branch=master "Build Status") [![codecov](https://codecov.io/gh/Rintel/Breminale-Web/branch/master/graph/badge.svg)](https://codecov.io/gh/Rintel/Breminale-Web)
 
 
 ### Setup
