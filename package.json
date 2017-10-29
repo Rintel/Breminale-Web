@@ -9,7 +9,12 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "lint": "eslint **/*.js{,x}",
-    "test": "jest"
+    "test": "jest",
+    "codecov": "codecov -t 2ddf00a1-9db5-40ea-a7c7-ed92f7d5cfb9"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "dependencies": {
     "axios": "^0.17.0",
@@ -18,6 +23,7 @@
     "babel-loader": "7.1.1",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-env": "1.5.2",
+    "codecov": "^3.0.0",
     "css-loader": "0.28.4",
     "live-server": "^1.2.0",
     "material-ui": "^0.19.4",
