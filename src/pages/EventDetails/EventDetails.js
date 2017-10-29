@@ -1,5 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from '../../components/Header/Header';
+
+const propTypes = {
+  match: PropTypes.object.isRequired
+};
 
 const EventDetails = (props) => {
   console.log(props);
@@ -11,5 +16,7 @@ const EventDetails = (props) => {
       </div>
     );
 };
+
+EventDetails.propTypes = propTypes;
 
 export default EventDetails;
