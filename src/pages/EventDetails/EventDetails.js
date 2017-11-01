@@ -7,12 +7,17 @@ const propTypes = {
 };
 
 const EventDetails = (props) => {
-  console.log(props);
   return (
       <div className='content-container'>
-
-        <img src={"https://via.placeholder.com/350x150"} />
-        This is the Event with ID {props.match.params.id}
+        <Header title={'Breminale-Web'} />
+        <div className='event-container'>
+          <div className='event-banner'>
+            <img src={'http://www.joko-bremen.de/breminale15/SAM_1657.jpg'} />
+          </div>
+          <div className='event-description'>
+            <p>This is the Event with ID {props.match.params.id}</p>
+          </div>
+        </div>
       </div>
     );
 };
