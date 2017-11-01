@@ -14,6 +14,7 @@ const styles = {
   gridList: {
     overflowY: 'auto',
   },
+  spinner: {}
 };
 
 export default class Welcome extends React.Component {
@@ -47,6 +48,7 @@ export default class Welcome extends React.Component {
         />
         <div className='events-container'>
           <GridList
+            cols={4}
             cellHeight={260}
             style={styles.gridList}
           >

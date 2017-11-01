@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Page rendering valid props are passed 1`] = `
+exports[`Card Component is rendering valid props are passed 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -38,10 +38,11 @@ ShallowWrapper {
             disableTouchRipple={false}
             disabled={false}
             iconStyle={Object {}}
+            onClick={[Function]}
             tooltipPosition="bottom-center"
             touch={false}
           >
-            <ToggleStarBorder
+            <ActionFavoriteBorder
               color="white"
             />
           </IconButton>
@@ -79,10 +80,11 @@ ShallowWrapper {
           disableTouchRipple={false}
           disabled={false}
           iconStyle={Object {}}
+          onClick={[Function]}
           tooltipPosition="bottom-center"
           touch={false}
         >
-          <ToggleStarBorder
+          <ActionFavoriteBorder
             color="white"
           />
         </IconButton>,
@@ -131,10 +133,11 @@ ShallowWrapper {
               disableTouchRipple={false}
               disabled={false}
               iconStyle={Object {}}
+              onClick={[Function]}
               tooltipPosition="bottom-center"
               touch={false}
             >
-              <ToggleStarBorder
+              <ActionFavoriteBorder
                 color="white"
               />
             </IconButton>
@@ -172,10 +175,11 @@ ShallowWrapper {
             disableTouchRipple={false}
             disabled={false}
             iconStyle={Object {}}
+            onClick={[Function]}
             tooltipPosition="bottom-center"
             touch={false}
           >
-            <ToggleStarBorder
+            <ActionFavoriteBorder
               color="white"
             />
           </IconButton>,

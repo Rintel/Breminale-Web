@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventDetails Component is rendering valid props are passed 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EventDetails
+    match={
+      Object {
+        "params": Object {
+          "id": 321,
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header
+          title="Breminale-Web"
+        />,
+        <div
+          className="event-container"
+        >
+          <div
+            className="event-banner"
+          >
+            <img
+              src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+            />
+          </div>
+          <div
+            className="event-description"
+          >
+            <p>
+              This is the Event with ID 
+              321
+            </p>
+          </div>
+        </div>,
+      ],
+      "className": "content-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "class",
+        "props": Object {
+          "title": "Breminale-Web",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="event-banner"
+            >
+              <img
+                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+              />
+            </div>,
+            <div
+              className="event-description"
+            >
+              <p>
+                This is the Event with ID 
+                321
+              </p>
+            </div>,
+          ],
+          "className": "event-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+              />,
+              "className": "event-banner",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": null,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                This is the Event with ID 
+                321
+              </p>,
+              "className": "event-description",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "This is the Event with ID ",
+                  321,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "This is the Event with ID ",
+                321,
+              ],
+              "type": "p",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header
+            title="Breminale-Web"
+          />,
+          <div
+            className="event-container"
+          >
+            <div
+              className="event-banner"
+            >
+              <img
+                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+              />
+            </div>
+            <div
+              className="event-description"
+            >
+              <p>
+                This is the Event with ID 
+                321
+              </p>
+            </div>
+          </div>,
+        ],
+        "className": "content-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "class",
+          "props": Object {
+            "title": "Breminale-Web",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="event-banner"
+              >
+                <img
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />
+              </div>,
+              <div
+                className="event-description"
+              >
+                <p>
+                  This is the Event with ID 
+                  321
+                </p>
+              </div>,
+            ],
+            "className": "event-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />,
+                "className": "event-banner",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": null,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p>
+                  This is the Event with ID 
+                  321
+                </p>,
+                "className": "event-description",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "This is the Event with ID ",
+                    321,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "This is the Event with ID ",
+                  321,
+                ],
+                "type": "p",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

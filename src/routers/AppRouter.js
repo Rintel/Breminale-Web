@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Welcome from '../pages/Welcome/Welcome';
 import EventDetails from '../pages/EventDetails/EventDetails';
+import Map from '../pages/Map/Map';
 
 const NotFound = () => (
   <div>
@@ -17,6 +18,7 @@ const AppRouter = () => (
       <Switch>
         <Route path='/' component={Welcome} exact={true} />
         <Route path='/events/:id' component={EventDetails} />
+        <Route path='/map' component={Map} exact={true} />
         <Route component={NotFound} />
       </Switch>
     </MuiThemeProvider>

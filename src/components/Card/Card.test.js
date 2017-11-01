@@ -18,7 +18,7 @@ const baseProps = {
   }
 };
 
-describe('Page rendering', () => {
+describe('Card Component is rendering', () => {
   test('valid props are passed', () => {
     const wrapper = shallow(
       <Card {...baseProps} />

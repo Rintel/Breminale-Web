@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import FavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import { Link } from 'react-router-dom';
 
 
@@ -21,6 +21,10 @@ const propTypes = {
   }).isRequired
 };
 
+const setAsFavorite = () => {
+  alert("Hello world!");
+};
+
 const EventCard = (props) => {
   const { event } = props;
 
@@ -30,7 +34,7 @@ const EventCard = (props) => {
         key={event.id}
         title={event.name}
         subtitle={<span>by <b>{event.description}</b></span>}
-        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+        actionIcon={<IconButton onClick={setAsFavorite}><FavoriteBorder color="white" /></IconButton>}
       >
         <img src={"https://via.placeholder.com/350x150"} />
       </GridTile>

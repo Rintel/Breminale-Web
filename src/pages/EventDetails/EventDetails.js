@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import Header from '../../components/Header/Header';
 
 const propTypes = {
-  match: PropTypes.object.isRequired
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.node,
+    }).isRequired,
+  }).isRequired
 };
 
 const EventDetails = (props) => {
