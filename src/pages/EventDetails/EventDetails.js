@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 
-const EventDetails = () => {
+const EventDetails = (props) => {
+  console.log(props);
   return (
       <div className='content-container'>
-        <Header
-          title={'Breminale-Web'}
-        />
-      <img src={"https://via.placeholder.com/350x150"} />
+
+        <img src={"https://via.placeholder.com/350x150"} />
+        This is the Event with ID {props.match.params.id}
       </div>
     );
 };
