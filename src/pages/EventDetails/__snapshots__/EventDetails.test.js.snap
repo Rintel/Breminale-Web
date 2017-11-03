@@ -35,17 +35,33 @@ ShallowWrapper {
           <div
             className="event-banner"
           >
-            <img
-              src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-            />
+            <CardMedia
+              overlay={
+                <CardTitle
+                  subtitle="15. Juli 2016 18:00"
+                  title={null}
+                />
+              }
+            >
+              <img
+                alt=""
+                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+              />
+            </CardMedia>
           </div>
           <div
             className="event-description"
           >
-            <p>
-              This is the Event with ID 
-              321
-            </p>
+            <div
+              className="event-description__header"
+            >
+              Beschreibung
+            </div>
+            <div
+              className="event-description__content"
+            >
+              <p />
+            </div>
           </div>
         </div>,
       ],
@@ -73,17 +89,33 @@ ShallowWrapper {
             <div
               className="event-banner"
             >
-              <img
-                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-              />
+              <CardMedia
+                overlay={
+                  <CardTitle
+                    subtitle="15. Juli 2016 18:00"
+                    title={null}
+                  />
+                }
+              >
+                <img
+                  alt=""
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />
+              </CardMedia>
             </div>,
             <div
               className="event-description"
             >
-              <p>
-                This is the Event with ID 
-                321
-              </p>
+              <div
+                className="event-description__header"
+              >
+                Beschreibung
+              </div>
+              <div
+                className="event-description__content"
+              >
+                <p />
+              </div>
             </div>,
           ],
           "className": "event-container",
@@ -95,22 +127,50 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": <img
-                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-              />,
+              "children": <CardMedia
+                overlay={
+                  <CardTitle
+                    subtitle="15. Juli 2016 18:00"
+                    title={null}
+                  />
+                }
+              >
+                <img
+                  alt=""
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />
+              </CardMedia>,
               "className": "event-banner",
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": null,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+                "children": <img
+                  alt=""
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />,
+                "overlay": <CardTitle
+                  subtitle="15. Juli 2016 18:00"
+                  title={null}
+                />,
               },
               "ref": null,
-              "rendered": null,
-              "type": "img",
+              "rendered": Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": [Function],
             },
             "type": "div",
           },
@@ -119,30 +179,57 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": <p>
-                This is the Event with ID 
-                321
-              </p>,
+              "children": Array [
+                <div
+                  className="event-description__header"
+                >
+                  Beschreibung
+                </div>,
+                <div
+                  className="event-description__content"
+                >
+                  <p />
+                </div>,
+              ],
               "className": "event-description",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "This is the Event with ID ",
-                  321,
-                ],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Beschreibung",
+                  "className": "event-description__header",
+                },
+                "ref": null,
+                "rendered": "Beschreibung",
+                "type": "div",
               },
-              "ref": null,
-              "rendered": Array [
-                "This is the Event with ID ",
-                321,
-              ],
-              "type": "p",
-            },
+              Object {
+                "instance": null,
+                "key": null,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <p />,
+                  "className": "event-description__content",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": null,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "p",
+                },
+                "type": "div",
+              },
+            ],
             "type": "div",
           },
         ],
@@ -167,17 +254,33 @@ ShallowWrapper {
             <div
               className="event-banner"
             >
-              <img
-                src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-              />
+              <CardMedia
+                overlay={
+                  <CardTitle
+                    subtitle="15. Juli 2016 18:00"
+                    title={null}
+                  />
+                }
+              >
+                <img
+                  alt=""
+                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                />
+              </CardMedia>
             </div>
             <div
               className="event-description"
             >
-              <p>
-                This is the Event with ID 
-                321
-              </p>
+              <div
+                className="event-description__header"
+              >
+                Beschreibung
+              </div>
+              <div
+                className="event-description__content"
+              >
+                <p />
+              </div>
             </div>
           </div>,
         ],
@@ -205,17 +308,33 @@ ShallowWrapper {
               <div
                 className="event-banner"
               >
-                <img
-                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-                />
+                <CardMedia
+                  overlay={
+                    <CardTitle
+                      subtitle="15. Juli 2016 18:00"
+                      title={null}
+                    />
+                  }
+                >
+                  <img
+                    alt=""
+                    src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                  />
+                </CardMedia>
               </div>,
               <div
                 className="event-description"
               >
-                <p>
-                  This is the Event with ID 
-                  321
-                </p>
+                <div
+                  className="event-description__header"
+                >
+                  Beschreibung
+                </div>
+                <div
+                  className="event-description__content"
+                >
+                  <p />
+                </div>
               </div>,
             ],
             "className": "event-container",
@@ -227,22 +346,50 @@ ShallowWrapper {
               "key": null,
               "nodeType": "host",
               "props": Object {
-                "children": <img
-                  src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
-                />,
+                "children": <CardMedia
+                  overlay={
+                    <CardTitle
+                      subtitle="15. Juli 2016 18:00"
+                      title={null}
+                    />
+                  }
+                >
+                  <img
+                    alt=""
+                    src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                  />
+                </CardMedia>,
                 "className": "event-banner",
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": null,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+                  "children": <img
+                    alt=""
+                    src="http://www.joko-bremen.de/breminale15/SAM_1657.jpg"
+                  />,
+                  "overlay": <CardTitle
+                    subtitle="15. Juli 2016 18:00"
+                    title={null}
+                  />,
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "img",
+                "rendered": Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "src": "http://www.joko-bremen.de/breminale15/SAM_1657.jpg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": [Function],
               },
               "type": "div",
             },
@@ -251,30 +398,57 @@ ShallowWrapper {
               "key": null,
               "nodeType": "host",
               "props": Object {
-                "children": <p>
-                  This is the Event with ID 
-                  321
-                </p>,
+                "children": Array [
+                  <div
+                    className="event-description__header"
+                  >
+                    Beschreibung
+                  </div>,
+                  <div
+                    className="event-description__content"
+                  >
+                    <p />
+                  </div>,
+                ],
                 "className": "event-description",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": null,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "This is the Event with ID ",
-                    321,
-                  ],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Beschreibung",
+                    "className": "event-description__header",
+                  },
+                  "ref": null,
+                  "rendered": "Beschreibung",
+                  "type": "div",
                 },
-                "ref": null,
-                "rendered": Array [
-                  "This is the Event with ID ",
-                  321,
-                ],
-                "type": "p",
-              },
+                Object {
+                  "instance": null,
+                  "key": null,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <p />,
+                    "className": "event-description__content",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": null,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": null,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  "type": "div",
+                },
+              ],
               "type": "div",
             },
           ],

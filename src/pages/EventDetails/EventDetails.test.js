@@ -6,7 +6,7 @@ import EventDetails from './EventDetails';
 const baseProps = {
   match: {
     params: {
-      id: 321,
+      id: 321
     }
   }
 };

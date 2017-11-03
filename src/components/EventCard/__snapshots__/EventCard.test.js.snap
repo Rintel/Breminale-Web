@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Component is rendering valid props are passed 1`] = `
+exports[`EventCard Component is rendering valid props are passed 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -16,7 +16,7 @@ ShallowWrapper {
         "name": "Event",
         "soundcloud_url": "url",
         "soundcloud_user_id": "id",
-        "start_time": "time",
+        "start_time": "2016-07-15T18:00:00.000+02:00",
       }
     }
   />,
@@ -51,14 +51,7 @@ ShallowWrapper {
         cols={1}
         containerElement="div"
         rows={1}
-        subtitle={
-          <span>
-            by 
-            <b>
-              Description
-            </b>
-          </span>
-        }
+        subtitle="15. Juli 2016 18:00"
         title="Event"
         titleBackground="rgba(0, 0, 0, 0.4)"
         titlePosition="bottom"
@@ -95,12 +88,7 @@ ShallowWrapper {
         "cols": 1,
         "containerElement": "div",
         "rows": 1,
-        "subtitle": <span>
-          by 
-          <b>
-            Description
-          </b>
-        </span>,
+        "subtitle": "15. Juli 2016 18:00",
         "title": "Event",
         "titleBackground": "rgba(0, 0, 0, 0.4)",
         "titlePosition": "bottom",
@@ -146,14 +134,7 @@ ShallowWrapper {
           cols={1}
           containerElement="div"
           rows={1}
-          subtitle={
-            <span>
-              by 
-              <b>
-                Description
-              </b>
-            </span>
-          }
+          subtitle="15. Juli 2016 18:00"
           title="Event"
           titleBackground="rgba(0, 0, 0, 0.4)"
           titlePosition="bottom"
@@ -190,12 +171,7 @@ ShallowWrapper {
           "cols": 1,
           "containerElement": "div",
           "rows": 1,
-          "subtitle": <span>
-            by 
-            <b>
-              Description
-            </b>
-          </span>,
+          "subtitle": "15. Juli 2016 18:00",
           "title": "Event",
           "titleBackground": "rgba(0, 0, 0, 0.4)",
           "titlePosition": "bottom",

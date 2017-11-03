@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Card from './Card';
+import EventCard from './EventCard';
 
 
 const baseProps = {
@@ -12,16 +12,16 @@ const baseProps = {
     image_url: 'url',
     image_url_medium: 'url',
     image_url_small: 'url',
-    start_time: 'time',
+    start_time: '2016-07-15T18:00:00.000+02:00',
     soundcloud_url: 'url',
     soundcloud_user_id: 'id'
   }
 };
 
-describe('Card Component is rendering', () => {
+describe('EventCard Component is rendering', () => {
   test('valid props are passed', () => {
     const wrapper = shallow(
-      <Card {...baseProps} />
+      <EventCard {...baseProps} />
     );
 
     expect(wrapper).toMatchSnapshot();

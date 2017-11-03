@@ -1,9 +1,13 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import EventCard from '../../components/Card/Card';
+import EventCard from '../../components/EventCard/EventCard';
 import CircularProgress from 'material-ui/CircularProgress';
+import IconButton from 'material-ui/IconButton';
 import axios from 'axios';
 import { GridList } from 'material-ui/GridList';
+
+import NavigateBefore from 'material-ui/svg-icons/image/navigate-before';
+import NavigateNext from 'material-ui/svg-icons/image/navigate-next';
 
 const styles = {
   root: {
@@ -28,7 +32,7 @@ export default class Welcome extends React.Component {
   componentDidMount() {
     if (typeof localStorage !== 'undefined') {
       const json = localStorage.getItem("content");
-      this.setState(() => ({content: JSON.parse(json)}));
+      this.setState(() => ({ content: JSON.parse(json) }));
     }
 
     axios.get(`https://serene-ocean-3356.herokuapp.com/api/v1/events.json`)
@@ -47,8 +51,17 @@ export default class Welcome extends React.Component {
           title={'Breminale-Web'}
         />
         <div className='events-container'>
+          <div className='events-date'>
+            <IconButton>
+              <NavigateBefore />
+            </IconButton>
+            {"Heute"}
+            <IconButton>
+              <NavigateNext />
+            </IconButton>
+          </div>
           <GridList
-            cols={4}
+            cols={3}
             cellHeight={260}
             style={styles.gridList}
           >
